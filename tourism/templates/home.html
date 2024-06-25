@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/img.webp' %}" height="700px" width="100%">
+        <div class="carousel-caption top-0 mt-4 d-none d-md-block" >
+            <p style="color:black;" class="mt-5 fs-3 text-uppercase"s>Time To Travel</p>
+            <h1 style="color:black;" class="display-1 fw-bolder text-capitalize">TOUR EASE</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid mt-3" style="margin-bottom:100px;">
+   <center> <b><h3>Our Services</h3></b></center>
+    <p style="text-align:justify;line-height:2;">Discover the world with Tour Ease Travel Agency! We specialize in crafting personalized travel experiences, offering a wide range of services from exotic getaways and family vacations to adventure tours and luxury retreats. With expert knowledge, insider tips, and a passion for exploration, we ensure every journey is memorable, seamless, and tailored to your dreams. Let us turn your travel fantasies into reality!</p>
+</div>
+ <div class="=container">
+  <div class="row">
+    <div class="col-6">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/hike.webp' %}" style="height:400px; width:800px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       <center><h1>Explore the wild</h1></center>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/ball.webp' %}" style="height:400px; width:800px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+       <center><h1>Explore the wild</h1></center>
+      </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+<br><br>
+ <div class="=container">
+  <div class="row">
+    <div class="col-6">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/mount.jpeg' %}" style="height:400px; width:800px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       <center><h1>Explore the wild</h1></center>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/beach.jpg' %}" style="height:400px; width:800px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+       <center><h1>Explore the wild</h1></center>
+      </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+<br>
+<div class="container-fluid p-5" style="background-color:#f2f2f2;">
+<div class="row">
+    <div class="col-6 col-md-4">
+     <center>
+         <h3><b>Expert Guides</b></h3>
+      </center>
+    </div>
+    <div class="col-6 col-md-4">
+    <center>
+         <h3><b>24x7 Support</b></h3>
+      </center>
+    </div>
+    <div class="col-6 col-md-4">
+    <center>
+         <h3><b>Adventures </b></h3>
+      </center>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<div  class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/img2.webp' %}" height="500px" width="100%">
+        <div class="carousel-caption top-0 mt-4 d-none d-md-block" >
+            <p style="color:black;" class="mt-5 fs-3 text-uppercase"s>Time To Travel</p>
+             <a href="{% url 'tourapp:packages' %}" class="btn btn-primary">Book a Tour</a>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

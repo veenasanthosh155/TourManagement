@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container p-3 text-center">
+        <h1 style="color:black;">Booking</h1><br>
+<form action="{% url 'tourapp:edit' form.instance.id %}" method="POST">
+
+     {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-primary">Book Now</button>
+</form>
+    <br><br>
+    <a href="{% url 'tourapp:confirm' %}" class="btn btn-primary">Go To Confirm Page</a>
+</div>
+
+{% endblock %}
